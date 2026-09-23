@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Travel planner familiar de 5 noches en Medellín, con base en Laureles.">
+  <title>Medellín · 5 noches | Travel Planner Familiar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="reading-progress"><span id="progressBar"></span></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio"><span class="brand-mark">M</span><span>MEDELLÍN<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#itinerario">Itinerario</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#hotel">Hotel</a>
+        <a href="#vuelos">Vuelos</a>
+        <a href="#presupuesto">Presupuesto</a>
+        <a href="#clima">Clima</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <span class="eyebrow">TRAVEL PLANNER · COLOMBIA</span>
+        <h1>MEDELLÍN</h1>
+        <h2>5 noches en la Ciudad de la Eterna Primavera</h2>
+        <p>Una aventura familiar entre montañas, cultura, ciencia y naturaleza.</p>
+        <div class="hero-pills">
+          <span>📍 Laureles, Medellín</span><span>👨‍👩‍👧‍👦 4 viajeros</span><span>🌙 5 noches</span><span>✈️ Bogotá → Medellín</span>
+        </div>
+        <a class="btn btn-primary" href="#itinerario">Explorar itinerario ↓</a>
+      </div>
+      <div class="hero-credit">Foto: Medellín Panorámica · Wikimedia Commons</div>
+    </section>
+
+    <section class="section summary">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow green">DE UN VISTAZO</span><h2>El viaje, en 4 tarjetas</h2></div>
+          <p>Una base en Laureles para combinar ciudad, cultura, ciencia y naturaleza sin correr.</p>
+        </div>
+        <div class="summary-grid">
+          <article class="info-card reveal"><span class="icon">✈️</span><div><b>Vuelos</b><small>Bogotá → Medellín</small></div></article>
+          <article class="info-card reveal"><span class="icon">🏨</span><div><b>Alojamiento</b><small>Laureles</small></div></article>
+          <article class="info-card reveal"><span class="icon">👨‍👩‍👧‍👦</span><div><b>Viajeros</b><small>2 adultos + 2 niños</small></div></article>
+          <article class="info-card reveal"><span class="icon">🌙</span><div><b>Duración</b><small>5 noches / 6 días</small></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section itinerary" id="itinerario">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow green">PLAN DÍA A DÍA</span><h2>Un itinerario que respira</h2></div>
+          <p>Abre cada día para ver el plan. Los horarios son orientativos y deben ajustarse a reservas y operación real.</p>
+        </div>
+        <div class="timeline">
+          <article class="day-card open reveal">
+            <button class="day-trigger" aria-expanded="true">
+              <span class="day-num">01</span><span class="day-title"><small>DÍA 1</small><strong>Llegada + Laureles</strong></span><span class="chevron">⌄</span>
+            </button>
+            <div class="day-body">
+              <div class="day-media"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Laureles.JPG?width=1200" alt="Laureles en Medellín" loading="lazy"><span>BASE · LAURELES</span></div>
+              <div class="day-details"><p class="lead">Instalación tranquila y primera caminata por el barrio.</p><ul><li>✈️ Vuelo Bogotá → Medellín</li><li>🛬 Llegada al aeropuerto José María Córdova</li><li>🚕 Traslado al hotel y check-in</li><li>🌳 Recorrido por Laureles y Segundo Parque</li><li>☕ Avenida Nutibara + cena</li></ul><div class="price-line"><b>$0 COP</b><span>Actividades sin costo de entrada</span></div></div>
+            </div>
+          </article>
+
+          <article class="day-card reveal">
+            <button class="day-trigger" aria-expanded="false">
+              <span class="day-num">02</span><span class="day-title"><small>DÍA 2</small><strong>Comuna 13 + Centro</strong></span><span class="chevron">⌄</span>
+            </button>
+            <div class="day-body">
+              <div class="day-media"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Comuna_13_-_Medell%C3%ADn.jpg?width=1200" alt="Entrada colorida de Comuna 13 en Medellín" loading="lazy"><span>ARTE · CULTURA</span></div>
+              <div class="day-details"><p class="lead">Arte urbano, escaleras eléctricas y una tarde por el centro histórico.</p><ul><li>🎨 Comuna 13 durante el día · <b>$0</b> por libre</li><li>🏛️ Plaza Botero · <b>Gratis</b></li><li>🖼️ Museo de Antioquia · tarifa variable según categoría</li></ul><div class="notice">Tour guiado: precio variable según operador. <button class="text-btn" data-modal="museo">Consultar precio</button></div></div>
+            </div>
+          </article>
+
+          <article class="day-card reveal">
+            <button class="day-trigger" aria-expanded="false">
+              <span class="day-num">03</span><span class="day-title"><small>DÍA 3</small><strong>Ciencia + naturaleza</strong></span><span class="chevron">⌄</span>
+            </button>
+            <div class="day-body">
+              <div class="day-media"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Parque_Explora_%28Medell%C3%ADn%2C_Colombia%29.JPG?width=1200" alt="Parque Explora de Medellín" loading="lazy"><span>CIENCIA · FAMILIA</span></div>
+              <div class="day-details"><p class="lead">Una jornada ideal para combinar experiencias interactivas con un paseo verde.</p><div class="activity-mini"><b>Parque Explora</b><span>≈ $41.000 pp · ≈ $164.000 / 4</span></div><div class="activity-mini"><b>Planetario</b><span>≈ $27.500 pp · ≈ $110.000 / 4</span></div><div class="activity-mini"><b>Combo Explora + Planetario</b><span>≈ $60.000 pp · ≈ $240.000 / 4</span></div><div class="activity-mini free"><b>Jardín Botánico</b><span>Gratis · ⭐ recomendado para niños</span></div><div class="notice">Precios de referencia — verificar antes del viaje. Las tarifas pueden variar por categoría y fecha.</div></div>
+            </div>
+          </article>
+
+          <article class="day-card reveal">
+            <button class="day-trigger" aria-expanded="false">
+              <span class="day-num">04</span><span class="day-title"><small>DÍA 4</small><strong>Guatapé</strong></span><span class="chevron">⌄</span>
+            </button>
+            <div class="day-body">
+              <div class="day-media"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Piedra_del_Pe%C3%B1ol_N1_30062011.jpg?width=1400" alt="Piedra del Peñol en Guatapé" loading="lazy"><span>PIEDRA · EMBALSE</span></div>
+              <div class="day-details"><p class="lead">Excursión de día completo al pueblo más colorido de Antioquia: subir la Piedra del Peñol, pasear entre zócalos y mirar el embalse.</p><ul><li>🚌 Bus Medellín → Guatapé desde el Terminal del Norte · <b>2 a 2,5 h</b></li><li>🪨 Subida a la Piedra del Peñol (unos 740 escalones) · <b>$35.000</b> por persona</li><li>🎨 Plazoleta y Calle de los Zócalos · <b>Gratis</b></li><li>🚤 Malecón y paseo en lancha (opcional) · ≈ $25.000 por persona</li><li>🍽️ Almuerzo en el pueblo y regreso a Medellín</li></ul>
+                <div class="transport-info">
+                  <h4>🚌 Transporte Medellín → Guatapé</h4>
+                  <div class="ti-row"><b>Empresas de bus</b><ul><li>Sotrasanvicente &amp; Guatapé La Piedra <span>(Taquilla 14)</span></li><li>Sotrapeñol <span>(Taquilla 9)</span></li></ul></div>
+                  <div class="ti-row"><b>Punto de salida</b><ul><li>Terminal del Norte (Estación Metro Caribe)</li></ul></div>
+                  <div class="ti-row"><b>Detalles del viaje</b><ul><li>Precio pasaje: $20.000 – $25.000 COP aprox. por persona / trayecto</li><li>Frecuencia: salidas cada 20-30 minutos (5:00 a. m. – 7:30 p. m.)</li><li>Tiempo de viaje: 2 a 2.5 horas</li></ul></div>
+                </div>
+                <div class="notice">Precios de referencia — verificar antes del viaje. La tarifa de la Piedra rige desde el 1 de enero de 2026. Conviene salir temprano para subir con menos gente y volver con calma.</div></div>
+            </div>
+          </article>
+
+          <article class="day-card reveal">
+            <button class="day-trigger" aria-expanded="false">
+              <span class="day-num">05</span><span class="day-title"><small>DÍA 5</small><strong>Pueblito Paisa + regreso</strong></span><span class="chevron">⌄</span>
+            </button>
+            <div class="day-body">
+              <div class="day-media"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pueblito_Paisa%2C_Medellin%2C_Antioquia%2C_Colombia.jpg?width=1200" alt="Pueblito Paisa en Medellín" loading="lazy"><span>DESPEDIDA · PAISA</span></div>
+              <div class="day-details"><p class="lead">Última vista de la ciudad antes de volver a Bogotá.</p><ul><li>🏘️ Visita al Pueblito Paisa · <b>Gratis</b></li><li>🍽️ Almuerzo</li><li>🧳 Regreso al hotel + equipaje</li><li>🚕 Traslado al aeropuerto</li><li>✈️ Medellín → Bogotá</li></ul></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section activities" id="actividades">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow yellow">PARA GUARDAR</span><h2>Galería de Medellín</h2></div><p>Toca una foto para verla en grande.</p></div>
+        <div class="gallery" id="gallery">
+          <button class="gallery-item wide"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Medell%C3%ADn_Panor%C3%A1mica.jpg?width=1400" alt="Panorámica de Medellín" loading="lazy"><span>Medellín panorámica</span></button>
+          <button class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Laureles.JPG?width=1000" alt="Laureles, Medellín" loading="lazy"><span>Laureles</span></button>
+          <button class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Comuna_13_-_Medell%C3%ADn.jpg?width=1000" alt="Comuna 13, Medellín" loading="lazy"><span>Comuna 13</span></button>
+          <button class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Parque_Explora_%28Medell%C3%ADn%2C_Colombia%29.JPG?width=1000" alt="Parque Explora" loading="lazy"><span>Parque Explora</span></button>
+          <button class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jard%C3%ADn_bot%C3%A1nico_de_Medell%C3%ADn.JPG?width=1000" alt="Jardín Botánico de Medellín" loading="lazy"><span>Jardín Botánico</span></button>
+          <button class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Metrocablemed.jpg?width=1000" alt="Metrocable de Medellín" loading="lazy"><span>Metrocable</span></button>
+          <button class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pueblito_Paisa%2C_Medellin%2C_Antioquia%2C_Colombia.jpg?width=1000" alt="Pueblito Paisa" loading="lazy"><span>Pueblito Paisa</span></button>
+          <button class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Botero.jpg?width=1000" alt="Plaza Botero" loading="lazy"><span>Plaza Botero</span></button>
+          <button class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Piedra_del_Pe%C3%B1ol_N1_30062011.jpg?width=1000" alt="Piedra del Peñol, Guatapé" loading="lazy"><span>Piedra del Peñol</span></button>
+          <button class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Piedra_del_pe%C3%B1ol_%283%29.JPG?width=1000" alt="La Piedra del Peñol vista de cerca" loading="lazy"><span>Guatapé · La Piedra</span></button>
+          <button class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Calles_de_Guatap%C3%A9_1.jpg?width=1000" alt="Calles coloridas de Guatapé" loading="lazy"><span>Calles de Guatapé</span></button>
+          <button class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fuente_en_la_calle_de_los_z%C3%B3calos_en_Guatap%C3%A9.JPG?width=1000" alt="Calle de los zócalos en Guatapé" loading="lazy"><span>Calle de los Zócalos</span></button>
+          <button class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_view_at_Guatape%2C_Antioquia%2C_Colombia.jpg?width=1000" alt="Vista aérea de Guatapé" loading="lazy"><span>Guatapé desde el aire</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hotel" id="hotel">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow blue">DÓNDE TE QUEDAS</span><h2>🏨 Hotel Boutique Laureles (HBL)</h2></div><p>Base del viaje en el corazón de Laureles-Estadio, a pocos pasos del Segundo Parque y de la avenida 70.</p></div>
+        <div class="hotel-layout">
+          <div class="hotel-info reveal">
+            <p class="lead">El Hotel Boutique Laureles Medellín (HBL) es un hotel de 4 estrellas en el barrio Laureles-Estadio. Ofrece habitaciones con aire acondicionado, wifi gratuita en toda la propiedad y desayuno incluido. Está a poca distancia del Segundo Parque de Laureles y la avenida 70, cerca del Pueblito Paisa y a unos minutos del aeropuerto Olaya Herrera.</p>
+            <div class="amenities">
+              <span>❄️ Aire acondicionado</span><span>📶 WiFi gratis</span><span>🍳 Desayuno incluido</span><span>🕐 Recepción 24 h</span><span>🌿 Jardín / terraza</span><span>🛋️ Salón compartido</span>
+            </div>
+            <div class="hotel-address">
+              <b>📍 Circular 4 # 72-51, Laureles-Estadio, Medellín</b>
+              <a class="btn btn-light" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Boutique+Laureles+Medellin+HBL">Ver en Google Maps ↗</a>
+            </div>
+            <p class="tiny-note">Descripción de referencia a partir de portales de reserva — confirma servicios y disponibilidad en la web oficial del hotel antes de reservar.</p>
+          </div>
+          <div class="hotel-map reveal">
+            <iframe title="Mapa cerca del Hotel Boutique Laureles" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-75.5983,6.2380,-75.5823,6.2500&layer=mapnik&marker=6.2440,-75.5903"></iframe>
+          </div>
+        </div>
+        <div class="hotel-gallery" id="hotelGallery">
+          <button class="gallery-item"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1000&q=80" alt="Habitación de hotel moderna, referencial" loading="lazy"><span>Habitación</span></button>
+          <button class="gallery-item"><img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1000&q=80" alt="Suite de hotel contemporánea, referencial" loading="lazy"><span>Suite</span></button>
+          <button class="gallery-item"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80" alt="Jardín de hotel, referencial" loading="lazy"><span>Jardín / terraza</span></button>
+          <button class="gallery-item"><img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1000&q=80" alt="Interior de hotel, referencial" loading="lazy"><span>Salón / interior</span></button>
+        </div>
+        <p class="tiny-note">Fotos de referencia (no son tomas oficiales del hotel). <a class="text-btn" target="_blank" rel="noopener" href="https://www.google.com/search?q=Hotel+Boutique+Laureles+Medellin+fotos">Ver fotos reales ↗</a></p>
+      </div>
+    </section>
+
+    <section class="section flights" id="vuelos">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow green">CÓMO LLEGAMOS</span><h2>✈️ Vuelos</h2></div><p>Completa aerolínea, fecha, hora y precio en cuanto reserves. Los campos quedan editables directamente en el archivo.</p></div>
+        <div class="flights-grid">
+          <article class="flight-card reveal">
+            <header><span class="fc-icon">🛫</span><h3>Vuelo de ida</h3></header>
+            <div class="flight-route"><span>BOG</span><i></i><small>Bogotá → Medellín</small><i></i><span>MDE</span></div>
+            <div class="flight-fields">
+              <div><b>Aerolínea</b><span>Por confirmar</span></div>
+              <div><b>Fecha</b><span>Por confirmar</span></div>
+              <div><b>Hora</b><span>Por confirmar</span></div>
+              <div><b>Precio</b><span>Por confirmar</span></div>
+            </div>
+          </article>
+          <article class="flight-card reveal">
+            <header><span class="fc-icon">🛬</span><h3>Vuelo de regreso</h3></header>
+            <div class="flight-route"><span>MDE</span><i></i><small>Medellín → Bogotá</small><i></i><span>BOG</span></div>
+            <div class="flight-fields">
+              <div><b>Aerolínea</b><span>Por confirmar</span></div>
+              <div><b>Fecha</b><span>Por confirmar</span></div>
+              <div><b>Hora</b><span>Por confirmar</span></div>
+              <div><b>Precio</b><span>Por confirmar</span></div>
+            </div>
+          </article>
+        </div>
+        <p class="tiny-note">Reemplaza "Por confirmar" por los datos reales de cada vuelo en cuanto los tengas.</p>
+      </div>
+    </section>
+
+            <section class="section budget" id="presupuesto">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow green">TU NÚMERO</span><h2>Calculadora de presupuesto</h2></div><p>Editable: cambia hotel, vuelos, transporte y comida para acercarte a tu presupuesto real.</p></div>
+        <div class="budget-layout">
+          <div class="budget-form">
+            <div class="budget-block"><h3>👨‍👩‍👧‍👦 Viajeros</h3><div class="form-row"><label>Adultos<input id="adults" type="number" min="0" value="2"></label><label>Niños<input id="kids" type="number" min="0" value="2"></label></div></div>
+            <div class="budget-block"><h3>🏨 Hotel</h3><label>Precio total del hotel (COP)<input id="hotelPrice" type="number" min="0" value="1750000"></label><small>Incluye tus 5 noches en el HBL.</small></div>
+            <div class="budget-block"><h3>✈️ Vuelos</h3><label>Precio total de los vuelos, los 4 (COP)<input id="flightPrice" type="number" min="0" value="600000"></label><small>Ida y regreso, para los 4 viajeros.</small></div>
+            <div class="budget-block"><h3>🎟️ Actividades</h3><div class="checks">
+              <label><input class="activity" data-price="0" type="checkbox"> Comuna 13 <span>Gratis</span></label>
+              <label><input class="activity" data-price="0" type="checkbox"> Museo de Antioquia <span>Variable</span></label>
+              <label><input class="activity" data-price="164000" type="checkbox"> Parque Explora <span>≈ $164.000 / 4</span></label>
+              <label><input class="activity" data-price="110000" type="checkbox"> Planetario <span>≈ $110.000 / 4</span></label>
+              <label><input class="activity" data-price="0" type="checkbox"> Jardín Botánico <span>Gratis</span></label>
+              <label><input class="activity" data-price="0" type="checkbox"> Pueblito Paisa <span>Gratis</span></label>
+            </div><p class="tiny-note">Las actividades con tarifa variable se dejan en $0 hasta que introduzcas un valor real.</p></div>
+            <div class="budget-block"><h3>🪨 Guatapé · Día 4</h3><div class="checks">
+              <label><input class="guatape" data-pp="35000" type="checkbox"> Piedra del Peñol · entrada <span>$35.000 por persona</span></label>
+              <label><input class="guatape" data-pp="45000" type="checkbox"> Bus Medellín ↔ Guatapé · ida y vuelta <span>≈ $22.500 por trayecto · por persona</span></label>
+              <label><input class="guatape" data-pp="25000" type="checkbox"> Paseo en lancha por el embalse (opcional) <span>≈ $25.000 por persona</span></label>
+            </div><p class="tiny-note">Cada valor se multiplica por el número de viajeros. Entrada de la Piedra: tarifa única vigente desde enero de 2026 (confírmala en taquilla, incluidos posibles descuentos para niños). Bus: punto medio de $20.000–$25.000 por trayecto; aquí ya está contado, no lo repitas en Transporte. Lancha: valor aproximado, varía según embarcación.</p></div>
+            <div class="budget-block"><h3>🚕 Transporte</h3><label>Presupuesto total (COP)<input id="transportCost" type="number" min="0" value="250000"></label></div>
+            <div class="budget-block"><h3>🍽️ Comida</h3><label>Presupuesto total de comida (COP)<input id="foodPrice" type="number" min="0" value="1500000"></label><small>Para los 6 días del viaje (5 noches).</small></div>
+          </div>
+          <aside class="total-card"><span class="eyebrow yellow">ESTIMACIÓN</span><h3>Resumen</h3><div class="total-row"><span>🏨 Hotel</span><b id="hotelTotal">$0</b></div><div class="total-row"><span>✈️ Vuelos</span><b id="flightTotal">$0</b></div><div class="total-row"><span>🎟️ Actividades</span><b id="activityTotal">$0</b></div><div class="total-row"><span>🪨 Guatapé</span><b id="guatapeTotal">$0</b></div><div class="total-row"><span>🚕 Transporte</span><b id="transportTotal">$0</b></div><div class="total-row"><span>🍽️ Comida</span><b id="foodTotal">$0</b></div><hr><span class="total-label">TOTAL ESTIMADO</span><strong id="grandTotal">$0</strong><span class="per-person">≈ <b id="perPerson">$0</b> por persona</span><p class="tiny-note">Estimación editable; no representa una cotización ni incluye conceptos no ingresados.</p></aside>
+        </div>
+      </div>
+    </section>
+
+            <section class="section climate" id="clima">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow yellow">CLIMA</span><h2>El clima, sin sorpresas</h2></div>
+          <p>Promedios de referencia para Medellín y Guatapé. Úsalos para decidir qué ropa llevar y a qué hora salir; confirma el pronóstico unos días antes del viaje.</p>
+        </div>
+
+        <div class="climate-hero reveal">
+          <div class="climate-hero-main">
+            <div class="weather-icon">🌤️</div>
+            <div><h3>Medellín, la Ciudad de la Eterna Primavera</h3><p>Clima templado casi todo el año gracias a su altitud. Las mañanas suelen estar despejadas y las tardes pueden traer aguaceros cortos, sobre todo en temporada de lluvias.</p></div>
+          </div>
+          <div class="climate-stats">
+            <div><strong>≈ 22 °C</strong><span>Temperatura media anual</span></div>
+            <div><strong>17 – 27 °C</strong><span>Mínima y máxima típicas</span></div>
+            <div><strong>1.495 m</strong><span>Altitud de Medellín sobre el nivel del mar</span></div>
+            <div><strong>Abr–May · Oct–Nov</strong><span>Temporadas con más lluvia</span></div>
+          </div>
+        </div>
+
+        <div class="climate-compare">
+          <article class="place-climate reveal">
+            <header><h3>Medellín</h3><span class="days-tag">DÍAS 1, 2, 3 Y 5</span></header>
+            <div class="temp">17 – 27 °C</div>
+            <p>Cálido durante el día y templado por la noche. La ciudad está a unos 1.495 m de altitud.</p>
+            <ul>
+              <li>🌅 Las mañanas son la mejor ventana para actividades al aire libre.</li>
+              <li>🌦️ Las lluvias suelen llegar por la tarde y durar poco.</li>
+              <li>👕 Ropa ligera y una chaqueta fina para la noche.</li>
+            </ul>
+          </article>
+          <article class="place-climate reveal">
+            <header><h3>Guatapé</h3><span class="days-tag">DÍA 4</span></header>
+            <div class="temp">≈ 18 – 24 °C</div>
+            <p>Más fresco y húmedo que Medellín. El pueblo está a unos 1.900 m de altitud y el tiempo puede cambiar rápido.</p>
+            <ul>
+              <li>🧥 Chaqueta liviana e impermeable en la mochila.</li>
+              <li>🪨 Sube la Piedra temprano: mejor luz y menos gente.</li>
+              <li>🚤 El paseo en lancha se disfruta más con cielo despejado.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="climate-months reveal">
+          <div class="cm-head"><div><h3>¿Cuándo viajas?</h3><p>Elige el mes para ver cuánta lluvia esperar y cómo ajustar el plan.</p></div></div>
+          <div class="month-chips" id="monthChips" role="group" aria-label="Mes del viaje"></div>
+          <div class="month-detail" id="monthDetail" aria-live="polite"></div>
+        </div>
+
+        <div class="climate-days">
+          <h3 class="sub-title reveal">El clima y tu itinerario</h3>
+          <div class="day-weather-grid">
+            <article class="day-weather reveal"><span class="dw-day">DÍA 1</span><b>Laureles</b><p>Caminata por el barrio a última hora de la tarde, cuando la temperatura es más agradable. Paraguas compacto por si llega un aguacero.</p></article>
+            <article class="day-weather reveal"><span class="dw-day">DÍA 2</span><b>Comuna 13 + Centro</b><p>La Comuna 13 se disfruta mejor por la mañana, con menos calor. Sus calles empinadas y escaleras resbalan con lluvia. Deja el Museo de Antioquia para la tarde.</p></article>
+            <article class="day-weather reveal"><span class="dw-day">DÍA 3</span><b>Ciencia + naturaleza</b><p>Jardín Botánico por la mañana. Parque Explora y el Planetario funcionan como plan B si el día amanece lluvioso.</p></article>
+            <article class="day-weather reveal"><span class="dw-day">DÍA 4</span><b>Guatapé</b><p>Es el día más fresco y húmedo del viaje. Calzado con buen agarre, chaqueta impermeable y salir temprano desde Medellín.</p></article>
+            <article class="day-weather reveal"><span class="dw-day">DÍA 5</span><b>Pueblito Paisa</b><p>Las vistas de la ciudad son mejores con cielo despejado, normalmente por la mañana. Deja margen antes del traslado al aeropuerto.</p></article>
+          </div>
+        </div>
+
+        <div class="climate-tips">
+          <article class="tip reveal"><span>☂️</span><b>Paraguas compacto</b><p>Los aguaceros de la tarde son frecuentes, incluso fuera de temporada de lluvias.</p></article>
+          <article class="tip reveal"><span>☀️</span><b>Protector solar</b><p>Cerca del ecuador el sol puede ser intenso aunque el día esté fresco o nublado.</p></article>
+          <article class="tip reveal"><span>🧥</span><b>Ropa en capas</b><p>Guatapé y las noches son más frescos que el centro de Medellín al mediodía.</p></article>
+          <article class="tip reveal"><span>👟</span><b>Calzado con agarre</b><p>Escaleras, calles empinadas y la subida a la Piedra resbalan cuando están mojadas.</p></article>
+        </div>
+
+        <div class="climate-foot reveal">
+          <small>Información general basada en promedios climáticos; el tiempo real varía. Verifica el pronóstico antes del viaje.</small>
+          <div class="forecast-links"><a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/search?q=clima+Medell%C3%ADn">Pronóstico Medellín ↗</a><a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/search?q=clima+Guatap%C3%A9">Pronóstico Guatapé ↗</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container"><span>🌄</span><h2>¡Medellín nos espera!</h2><p>5 noches, muchas aventuras y recuerdos para toda la familia.</p><a class="btn btn-primary" href="#inicio">↑ Volver al inicio</a></div>
+    </section>
+  </main>
+
+  <footer><div class="container"><span>Plan de viaje familiar · Medellín · 5 noches</span><span>Diseñado como planner editable</span></div></footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button id="lbClose" aria-label="Cerrar">×</button><button id="lbPrev" aria-label="Anterior">‹</button><figure><img id="lbImage" alt=""><figcaption id="lbCaption"></figcaption></figure><button id="lbNext" aria-label="Siguiente">›</button></div>
+  <div class="modal" id="modal" aria-hidden="true"><div class="modal-box"><button class="modal-close" id="modalClose">×</button><span class="eyebrow blue">VERIFICACIÓN</span><h2>Consulta la tarifa vigente</h2><p>El precio del Museo de Antioquia depende de la categoría, condiciones y fecha. Esta página evita inventar una tarifa. Consulta la fuente oficial antes de comprar.</p><a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.museodeantioquia.co/">Abrir Museo de Antioquia ↗</a></div></div>
+
+  <button class="back-top" id="backTop" aria-label="Volver arriba">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
